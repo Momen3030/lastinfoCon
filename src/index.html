@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0" />
+    <title>Stencil Component Starter</title>
+
+    <script type="module" src="/build/infographic.esm.js"></script>
+    <script nomodule src="/build/infographic.js"></script>
+    <style>
+         :root {
+            --elham-global-theme-dark: #000;
+            --elham-global-theme-grey: #8b8c8a;
+            --elham-global-theme-light: #fff;
+            --elham-global-theme-danger: #fb959c;
+            --elham-global-colors-danger: #FA5C7C;
+            --elham-global-theme-default: rgb(39, 63, 223);
+            --elham-global-theme-primary: rgb(39, 63, 223);
+            --elham-global-colors-primary: rgb(39, 63, 223);
+            --elham-global-colors-success: #0ACF97;
+            --elham-global-colors-warning: orange;
+            --elham-global-schemas-fifth-1: #ff0844;
+            --elham-global-schemas-fifth-2: #ffb199;
+            --elham-global-schemas-first-1: #746cfe;
+            --elham-global-schemas-first-2: #f477d0;
+            --elham-global-schemas-third-1: #00c6fb;
+            --elham-global-schemas-third-2: #005bea;
+            --elham-global-theme-secondary: rgb(39, 63, 223);
+            --elham-global-colors-secondary: rgb(39, 63, 223);
+            --elham-global-schemas-fourth-1: #6a11cb;
+            --elham-global-schemas-fourth-2: #2575fc;
+            --elham-global-schemas-second-1: #0ACF97;
+            --elham-global-schemas-second-2: #3cba92;
+            --elham-global-colors-dark-color: #333;
+            --elham-global-colors-light-color: #dbdbdb;
+            --elham-global-colors-primary-dark: rgb(39, 63, 223);
+            --elham-global-colors-primary-light: rgb(39, 63, 223);
+            --elham-global-colors-secondary-dark: rgb(39, 63, 223);
+            --elham-global-colors-secondary-light: rgb(39, 63, 223);
+            --elham-global-gradients-danger-color: #FA5C7C;
+            --elham-global-gradients-primary-color: rgb(39, 63, 223);
+            --elham-global-gradients-success-color: #0ACF97;
+            --elham-global-gradients-secondary-color: rgb(39, 63, 223);
+            --elham-global-theme-moz-linear-gradient: -moz-linear-gradient(36deg, rgb(39, 113, 223), rgb(39, 63, 223));
+            --elham-global-theme-webkit-linear-gradient: -webkit-linear-gradient(36deg, rgb(39, 113, 223), rgb(39, 63, 223));
+            --elham-global-theme-standard-linear-gradient: linear-gradient(36deg, rgb(39, 113, 223), rgb(39, 63, 223));
+            --elham-components-simulation-border-top-color: rgb(39, 63, 223);
+            --elham-components-simulation-border-bottom-color: rgb(39, 63, 223);
+            --elham-global-gradients-danger-standard-gradient: linear-gradient(220deg, #FA5C7C 0%, #F83889 100%);
+            --elham-global-theme-moz-linear-gradient-background: rgb(39, 63, 223);
+            --elham-global-gradients-secondary-moz-linear-gradient: -moz-linear-gradient(36deg, rgb(39, 113, 223), rgb(39, 63, 223));
+            --elham-global-gradients-primary-linear-gradient-standard: linear-gradient(36deg, rgb(39, 113, 223), rgb(39, 63, 223));
+            --elham-global-gradients-secondary-webkit-linear-gradient: -webkit-linear-gradient(36deg, rgb(39, 113, 223), rgb(39, 63, 223));
+            --elham-global-gradients-success-linear-gradient-standard: linear-gradient(220deg, #0ACF97 0%, #3cba92 100%);
+            --elham-global-gradients-secondary-standad-linear-gradient: linear-gradient(36deg, rgb(39, 113, 223), rgb(39, 63, 223));
+            --elham-global-gradients-secondary-fallback-linear-gradient-type: 1;
+            --elham-global-gradients-secondary-fallback-linear-gradient-end-color: rgb(39, 63, 223);
+            --elham-global-gradients-secondary-fallback-linear-gradient-start-color: rgb(39, 113, 223);
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- <info-graphic icons-number="3" icon-acitve-color="var(--elham-global-colors-primary)"></info-graphic> -->
+    <script>
+        const component = document.createElement('info-graphic');
+        component.setAttribute('content', JSON.stringify({
+            attributes: {
+                iconsNumber: 5,
+                centerImg: "https://cdn.pixabay.com/photo/2020/03/31/03/05/virus-4986063_960_720.png",
+                centerColor: "var(--elham-global-theme-primary)",
+                centerText: "kwwwwww",
+                // boxColor: "var(--elham-global-theme-primary)",
+                iconOne: {
+                    img: "https://www.flaticon.com/svg/static/icons/svg/599/599979.svg",
+                    title: "TTTtt",
+                    header: "TTTT",
+                    body: "TTTT"
+                },
+                iconTwo: {
+                    img: "https://www.flaticon.com/svg/static/icons/svg/599/599979.svg",
+                    title: "TTTtt2",
+                    header: "TTTT2",
+                    body: "TTTT2"
+                },
+                iconThree: {
+                    img: "https://www.flaticon.com/svg/static/icons/svg/599/599979.svg",
+                    title: "TTTtt2",
+                    header: "TTTT2",
+                    body: "TTTT2"
+                },
+                iconFour: {
+                    img: "https://www.flaticon.com/svg/static/icons/svg/599/599979.svg",
+                    title: "TTTtt2",
+                    header: "TTTT2",
+                    body: "TTTT2"
+                },
+
+                iconFive: {
+                    img: "https://www.flaticon.com/svg/static/icons/svg/599/599979.svg",
+                    title: "TTTtt2",
+                    header: "TTTT2",
+                    body: "TTTT2"
+                }
+            }
+        }));
+        document.body.appendChild(component);
+    </script>
+
+
+
+
+
+</body>
+
+</html>

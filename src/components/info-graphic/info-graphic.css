@@ -1,0 +1,411 @@
+:root {
+    --elham-global-theme-dark: #000;
+    --elham-global-theme-grey: #8b8c8a;
+    --elham-global-theme-light: #fff;
+    --elham-global-theme-danger: #fb959c;
+    --elham-global-colors-danger: #FA5C7C;
+    --elham-global-theme-default: rgb(39, 63, 223);
+    --elham-global-theme-primary: rgb(39, 63, 223);
+    --elham-global-colors-primary: rgb(39, 63, 223);
+    --elham-global-colors-success: #0ACF97;
+    --elham-global-colors-warning: orange;
+    --elham-global-schemas-fifth-1: #ff0844;
+    --elham-global-schemas-fifth-2: #ffb199;
+    --elham-global-schemas-first-1: #746cfe;
+    --elham-global-schemas-first-2: #f477d0;
+    --elham-global-schemas-third-1: #00c6fb;
+    --elham-global-schemas-third-2: #005bea;
+    --elham-global-theme-secondary: rgb(39, 63, 223);
+    --elham-global-colors-secondary: rgb(39, 63, 223);
+    --elham-global-schemas-fourth-1: #6a11cb;
+    --elham-global-schemas-fourth-2: #2575fc;
+    --elham-global-schemas-second-1: #0ACF97;
+    --elham-global-schemas-second-2: #3cba92;
+    --elham-global-colors-dark-color: #333;
+    --elham-global-colors-light-color: #dbdbdb;
+    --elham-global-colors-primary-dark: rgb(39, 63, 223);
+    --elham-global-colors-primary-light: rgb(39, 63, 223);
+    --elham-global-colors-secondary-dark: rgb(39, 63, 223);
+    --elham-global-colors-secondary-light: rgb(39, 63, 223);
+    --elham-global-gradients-danger-color: #FA5C7C;
+    --elham-global-gradients-primary-color: rgb(39, 63, 223);
+    --elham-global-gradients-success-color: #0ACF97;
+    --elham-global-gradients-secondary-color: rgb(39, 63, 223);
+    --elham-global-theme-moz-linear-gradient: -moz-linear-gradient(36deg, rgb(39, 113, 223), rgb(39, 63, 223));
+    --elham-global-theme-webkit-linear-gradient: -webkit-linear-gradient(36deg, rgb(39, 113, 223), rgb(39, 63, 223));
+    --elham-global-theme-standard-linear-gradient: linear-gradient(36deg, rgb(39, 113, 223), rgb(39, 63, 223));
+    --elham-components-simulation-border-top-color: rgb(39, 63, 223);
+    --elham-components-simulation-border-bottom-color: rgb(39, 63, 223);
+    --elham-global-gradients-danger-standard-gradient: linear-gradient(220deg, #FA5C7C 0%, #F83889 100%);
+    --elham-global-theme-moz-linear-gradient-background: rgb(39, 63, 223);
+    --elham-global-gradients-secondary-moz-linear-gradient: -moz-linear-gradient(36deg, rgb(39, 113, 223), rgb(39, 63, 223));
+    --elham-global-gradients-primary-linear-gradient-standard: linear-gradient(36deg, rgb(39, 113, 223), rgb(39, 63, 223));
+    --elham-global-gradients-secondary-webkit-linear-gradient: -webkit-linear-gradient(36deg, rgb(39, 113, 223), rgb(39, 63, 223));
+    --elham-global-gradients-success-linear-gradient-standard: linear-gradient(220deg, #0ACF97 0%, #3cba92 100%);
+    --elham-global-gradients-secondary-standad-linear-gradient: linear-gradient(36deg, rgb(39, 113, 223), rgb(39, 63, 223));
+    --elham-global-gradients-secondary-fallback-linear-gradient-type: 1;
+    --elham-global-gradients-secondary-fallback-linear-gradient-end-color: rgb(39, 63, 223);
+    --elham-global-gradients-secondary-fallback-linear-gradient-start-color: rgb(39, 113, 223);
+}
+
+
+/* .NeueFrutigerWorld-Black {
+    font-family: NeueFrutigerWorld;
+} */
+
+.circular-menu {
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    top: 30%;
+    left: 40%;
+    background-color: var(--elham-primary);
+}
+
+
+/* .active {
+    background-color: var(--elham-secondry);
+} */
+
+.circular-menu__item {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    text-decoration: none;
+    color: #f6f6e9;
+    background-color: white;
+    transition: 0.9s;
+    outline: none;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.circular-menu__button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #523049;
+    outline: none;
+    font-style: normal;
+    font-weight: 800;
+    direction: rtl;
+    color: aliceblue;
+    padding: auto;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    padding: 1rem;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    transform: translate(-50%, -50%);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.circular-menu__lines,
+.circular-menu__lines::before,
+.circular-menu__lines::after {
+    position: absolute;
+    width: 20px;
+    height: 6px;
+    background-color: #f6f6e9;
+    transition: 0.3s;
+    margin-top: 29%;
+    margin-left: 7%;
+}
+
+.circular-menu__lines {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: transparent;
+    font-weight: 1800;
+}
+
+.circular-menu__lines::before {
+    content: '';
+}
+
+.circular-menu__lines::after {
+    content: '';
+    transform: rotate(90deg);
+}
+
+.circular-menu__button_active .circular-menu__lines::before {
+    transform: rotate(45deg);
+}
+
+.circular-menu__button_active .circular-menu__lines::after {
+    transform: rotate(-45deg);
+}
+
+.circular-menu__test {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    text-decoration: none;
+    color: #f6f6e9;
+    background-color: #13334c;
+    transition: 0.3s;
+    outline: none;
+    top: 100px;
+    left: 100px;
+}
+
+.circular-menu__item:hover .coupontooltip {
+    display: block;
+}
+
+.coupontooltip {
+    display: none;
+    background: #0d0a2c;
+    margin: -70%;
+    padding: 6px;
+    position: absolute;
+    z-index: 1000;
+}
+
+.couponcode {
+    margin: 100px;
+}
+
+#infoBox {
+    color: black;
+    border-radius: 3px;
+    position: absolute;
+    left: 49%;
+    top: 85%;
+    font-size: 0.9em;
+    font-weight: 800;
+    transform: translate(-50%, -50%);
+    text-align: center
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    .circular-menu {
+        width: 130px;
+        height: 130px;
+    }
+    .circular-menu__item {
+        position: absolute;
+        top: 50%;
+        left: 30%;
+        transform: translate(-50%, -50%);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        /* width: 55px;
+    height: 55px; */
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        text-decoration: none;
+        color: #f6f6e9;
+        transition: 0.9s;
+        outline: none;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+    .circular-menu__button {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 75px;
+        height: 75px;
+        border-radius: 50%;
+        outline: none;
+        font-style: normal;
+        font-weight: 800;
+        font-size: 9px;
+        direction: rtl;
+        color: aliceblue;
+        padding: auto;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        padding: 1rem;
+        text-align: center;
+        text-decoration: none;
+        outline: none;
+        transform: translate(-50%, -50%);
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+    .coronaImg {
+        width: 25px;
+        height: 25px;
+        display: block;
+    }
+    .circular-menu__lines,
+    .circular-menu__lines::before,
+    .circular-menu__lines::after {
+        position: absolute;
+        width: 10px;
+        height: 3px;
+        background-color: #f6f6e9;
+        transition: 0.3s;
+        margin-top: 34%;
+        margin-left: 7%;
+    }
+    .circular-menu__lines {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: transparent;
+        font-weight: 1800;
+    }
+    .coupontooltip {
+        display: none;
+        background: #0d0a2c;
+        margin: -70%;
+        padding: 6px;
+        position: absolute;
+        z-index: 1000;
+        font-size: 9px;
+    }
+    .couponcode {
+        margin: 100px;
+    }
+    #infoBox {
+        top: 59% !important;
+        left: 49% !important;
+        font-size: 1.5rem !important;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .circular-menu {
+        width: 130px;
+        height: 130px;
+    }
+    .circular-menu__item {
+        position: absolute;
+        top: 50%;
+        left: 30%;
+        transform: translate(-50%, -50%);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        /* width: 55px;
+        height: 55px; */
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        text-decoration: none;
+        color: #f6f6e9;
+        transition: 0.9s;
+        outline: none;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+    .circular-menu__button {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 75px;
+        height: 75px;
+        border-radius: 50%;
+        outline: none;
+        font-style: normal;
+        font-weight: 800;
+        font-size: 9px;
+        direction: rtl;
+        color: aliceblue;
+        padding: auto;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        padding: 1rem;
+        text-align: center;
+        text-decoration: none;
+        outline: none;
+        transform: translate(-50%, -50%);
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+    .coronaImg {
+        width: 25px;
+        height: 25px;
+        display: block;
+    }
+    .circular-menu__lines,
+    .circular-menu__lines::before,
+    .circular-menu__lines::after {
+        position: absolute;
+        width: 10px;
+        height: 3px;
+        background-color: #f6f6e9;
+        transition: 0.3s;
+        margin-top: 29%;
+        margin-left: 7%;
+    }
+    .circular-menu__lines {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: transparent;
+        font-weight: 1800;
+    }
+    .coupontooltip {
+        display: none;
+        background: #0d0a2c;
+        margin: -70%;
+        padding: 6px;
+        position: absolute;
+        z-index: 1000;
+        font-size: 9px;
+    }
+    .couponcode {
+        margin: 100px;
+    }
+    #infoBox {
+        top: 74% !important;
+        left: 54% !important;
+        font-size: 1.3rem !important;
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 992px) {
+    #infoBox {
+        left: 50%;
+        top: 90%;
+    }
+}
+
+@media (min-width: 1200px) {
+    #infoBox {
+        left: 49%;
+        top: 87%;
+    }
+    .circular-menu__button {
+        width: 100px;
+        height: 100px;
+    }
+    .circular-menu__item {
+        width: 50px;
+        height: 50px;
+    }
+}
